@@ -10,7 +10,7 @@ Esse projeto é de um jogo em 3D baseado num RPG jogado por mim e por meus amigo
 
 Passos para instalar e executar o projeto:
 
-1. Clone o repositório: `git clone https://github.com/seuusuario/seuprojeto.git`
+1. Clone o repositório: `https://github.com/Eduardo-Willian-Horst/Sociedade-Horripylys.git`
 2. Incua o projeto nos projetos da Unity.
 
 ## 🤝 Contribuição
