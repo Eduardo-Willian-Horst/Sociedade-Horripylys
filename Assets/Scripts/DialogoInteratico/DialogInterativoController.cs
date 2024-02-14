@@ -9,6 +9,10 @@ public class DialogInterativoController : MonoBehaviour
     [SerializeField] private TalkSystem Ts;
     [SerializeField] private Canvas canvas_respostas, canvas_conversa;
     [SerializeField] private TextMeshProUGUI btn_1, btn_2;
+    [SerializeField] private CarMovemente CarStart;
+    [SerializeField] private GameObject Jocemar;
+    public GameObject cameraPrincipal;
+    public Camera segundaCamera;
     private int resposta;
     
 
@@ -135,6 +139,13 @@ public class DialogInterativoController : MonoBehaviour
     IEnumerator Talk_AssumirOCaso()
     {
         yield return Ts.ShowMsg("Jocemar: Obrigado! Se precisar de algo, pode ligar para a delegacia.");
+        yield return new WaitForSeconds(1f);
+        segundaCamera.gameObject.SetActive(false);
+        cameraPrincipal.SetActive(true);
+        CarStart.Inicia = true;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        Destroy(Jocemar);
     }
 
 

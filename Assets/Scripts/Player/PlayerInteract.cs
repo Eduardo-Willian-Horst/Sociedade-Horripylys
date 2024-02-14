@@ -23,7 +23,7 @@ public class PlayerInteract : MonoBehaviour
             textoAcao.enabled = isOverInteractiveObject;
         }
 
-        if (isOverInteractiveObject && Input.GetMouseButtonDown(0) && ps.isInspecItem == false)
+        if (isOverInteractiveObject && Input.GetKeyDown(KeyCode.F) && ps.isInspecItem == false)
         {
             Interactable interactable = hit.collider.GetComponent<Interactable>();
             if (interactable != null)
